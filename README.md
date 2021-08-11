@@ -2,6 +2,10 @@
 
 An android app to get COVID-19 Stats in Bangladesh and other countries.
 
+**Requirements: -**
+
+- Android Phone or Emulator with Android 7.0 Nougat or Above (All Devices from last 3 years are supported)
+
 **Download: -**
 
 - [Github Releases](https://github.com/rakinthegreat/BanCOVID-Source/releases)
@@ -38,7 +42,7 @@ So here we go:
 
 **Limitations: -**
 
-- The API we have used here is a foreign one. Unfortunately Bangladesh doesn't have any open source API that is regularly updated. As a result, the results available here might be delayed than daily bulletins of IEDCR.
+- The API we have used here is a foreign one. Unfortunately Bangladesh doesn't have any open source API that is regularly updated. As a result, the results available here might be delayed than daily bulletins of IEDCR. However it should be more or less in proper synchronization with Worldometers Database.
 
 - Another Big Problem is the availability of the app for installation. Play Store by Google is the most convenient place for installing apps but publishing an app there requires monetization and showing ads which is very much disturbing. As a result, you have to download the app from Github Releases.
 
