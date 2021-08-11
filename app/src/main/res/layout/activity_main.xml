@@ -438,7 +438,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="RAJCPSC"
                                 android:textColor="@color/blue"
-                                android:textSize="17sp"
+                                android:textSize="14sp"
                                 android:layout_gravity="center"/>
 
                         </LinearLayout>
@@ -472,7 +472,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="COVID Web"
                                 android:textColor="#ff1744"
-                                android:textSize="17sp" />
+                                android:textSize="14sp" />
 
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
@@ -504,7 +504,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="World Data"
                                 android:textColor="#69f0ae"
-                                android:textSize="17sp" />
+                                android:textSize="14sp" />
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
 

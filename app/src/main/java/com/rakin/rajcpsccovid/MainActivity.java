@@ -145,7 +145,7 @@ public class MainActivity extends AppCompatActivity {
             confirmed = NumberFormat.getInstance().format(confirmedInt);
             textView_confirmed.setText(confirmed);
 
-            int newConfirmedInt = Integer.parseInt(active);
+            int newConfirmedInt = Integer.parseInt(newConfirmed);
             newConfirmed = NumberFormat.getInstance().format(newConfirmedInt);
             textView_confirmed_new.setText("+" + newConfirmed);
 
@@ -197,6 +197,7 @@ public class MainActivity extends AppCompatActivity {
                         textView_confirmed.setText(confirmed);
                         totalTests = response.getString("tests");
                         textView_tests.setText(totalTests);
+                        newConfirmed = response.getString("todayCases");
 
                         Runnable progressRunnable = new Runnable() {
                             @Override
@@ -227,6 +228,7 @@ public class MainActivity extends AppCompatActivity {
                         totalTests = response.getString("tests");
                         textView_confirmed.setText(confirmed);
                         textView_tests.setText(totalTests);
+                        newConfirmed = response.getString("todayCases");
 
                         if (totalTests != "") {
                             Runnable progressRunnable = new Runnable() {

@@ -117,7 +117,8 @@
                     android:layout_height="35dp"
                     android:layout_marginStart="0dp"
                     android:onClick="opentgwise"
-                    android:src="@drawable/send_circle" />
+                    android:src="@drawable/telegram"
+                    app:tint="@android:color/white" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
     </GridLayout>
