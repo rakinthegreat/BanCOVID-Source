@@ -4,7 +4,7 @@ An android app to get COVID-19 Stats in Bangladesh and other countries.
 
 **Requirements: -**
 
-- Android Phone or Emulator with Android 7.0 Nougat or Above (All Devices from last 3 years are supported)
+- Android Phone or Emulator with Android 7.0 Nougat or Above (Almost All Android Devices from last 3 years are supported)
 
 **Download: -**
 
@@ -53,3 +53,8 @@ So here we go:
 - BanCOVID is still in its very early alpha stage and prepared in a very short time for Presenting in Rajshahi Cantonment Public School and College Science Fair. It has multiple options for improvising.
 
 - Concept and codes from this app can be used by other students and teachers for making assisting apps related to our school.
+
+**Screenshots: -**
+![Screenshot_20210811-213643](https://user-images.githubusercontent.com/66740314/129059637-6c5bc8c8-a8d9-442e-9fc4-2d3cbc581933.jpg)
+![Screenshot_2021-08-11-21-39-24-65](https://user-images.githubusercontent.com/66740314/129060166-1d8bb4b3-caed-4f22-a50b-f3995efc0c00.png)![Screenshot_1628673798](https://user-images.githubusercontent.com/66740314/129060380-c1b4806e-5730-4564-a230-563a949cf112.png)
+![Screenshot_1628673810](https://user-images.githubusercontent.com/66740314/129060578-dd23cacc-9475-434c-87bc-a1b4f786385f.png)
