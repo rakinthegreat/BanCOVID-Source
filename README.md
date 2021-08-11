@@ -4,7 +4,7 @@ An android app to get COVID-19 Stats in Bangladesh and other countries.
 
 **Download: -**
 
-- [Github Releases](https://github.com/rakinthegreat/BanCOVID/releases)
+- [Github Releases](https://github.com/rakinthegreat/BanCOVID-Source/releases)
 
 (You have to go to the above Github Releases Page and under assets you can find the apk file you need to download.)
 
