@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.rakin.rajcpsccovid">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature android:name="android.hardware.screen.portrait" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_corona"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_corona"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@drawable/ic_corona" />
+
+        <activity android:name="com.rakin.rajcpsccovid.activities.WorldDataActivity" />
+        <activity
+            android:name="com.rakin.rajcpsccovid.activities.InfoActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.rakin.rajcpsccovid.data.PerCountryData"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.rakin.rajcpsccovid.activities.CountrywiseDataActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.rakin.rajcpsccovid.MainActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.rakin.rajcpsccovid.activities.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2"
+            tools:ignore="LockedOrientationActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

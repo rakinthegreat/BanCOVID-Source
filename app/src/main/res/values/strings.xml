@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">BanCOVID</string>
+    <string name="credits">Science Fair Project 2021
+    </string>
+    <string name="owner_text">Made with ❤ from RAJCPSC\n\nBy Md Rakinuzzaman Talukder</string>
+    <string name="version">Alpha</string>
+    <string name="det">\u2022 <b>Class</b>: 10
+    \n\u2022 <b>Form</b>: Tagar
+    \n\u2022 <b>Roll</b>: 06
+    \n\u2022 <b>House</b>: Dharla</string>
+    <string name="changelogTitle"></string>
+    <string name="changelog"></string>
+</resources>
