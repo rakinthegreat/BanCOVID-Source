@@ -28,7 +28,8 @@ So here we go:
 
 - BanCOVID does not require you to give any suspicious permission from your phone like other apps. It runs with as minimal permission that is only internet connection permission in order to update the database.
 
-- BanCOVID is scanned by several anti virus engines and will not harm your device. [VirusTotal Detections](https://www.virustotal.com/gui/file/449a8941d3c761322c9fe91a009206998656e8fbbb8a7829d9ca286073e003bf/detection)
+- BanCOVID is scanned by several anti virus engines and will not harm your device. [VirusTotal Detections](https://www.virustotal.com/gui/file/449a8941d3c761322c9fe91a009206998656e8fbbb8a7829d9ca286073e003bf/detection).
+
 **How does it work? -**
 
 - The app has inbuilt functions to fetch data from an external API in JSON format.
