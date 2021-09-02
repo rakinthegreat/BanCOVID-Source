@@ -8,6 +8,7 @@ buildscript {
 
     }
     dependencies {
+        //noinspection AndroidGradlePluginVersion
         classpath 'com.android.tools.build:gradle:7.0.0'
         classpath 'com.google.firebase:firebase-crashlytics-gradle:2.7.1'
 
