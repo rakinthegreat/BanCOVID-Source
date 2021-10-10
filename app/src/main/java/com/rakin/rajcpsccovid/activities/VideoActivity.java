@@ -1,9 +1,11 @@
 package com.rakin.rajcpsccovid.activities;
 
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.widget.MediaController;
 import android.widget.VideoView;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
@@ -30,5 +32,11 @@ public class VideoActivity extends AppCompatActivity {
         videoView.setMediaController(mediaController);
         videoView.start();  //start() method of the VideoView class will start the video to play
 
+    }
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if (item.getItemId() == android.R.id.home)
+            finish();
+        return super.onOptionsItemSelected(item);
     }
 }

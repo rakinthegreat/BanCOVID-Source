@@ -17,7 +17,7 @@ gen/
 out/
 release/
 debug/
-
+app/debug/
 # Gradle files
 .gradle/
 build/
