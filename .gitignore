@@ -16,6 +16,7 @@ bin/
 gen/
 out/
 release/
+debug/
 
 # Gradle files
 .gradle/
@@ -200,3 +201,4 @@ fabric.properties
 !/gradle/wrapper/gradle-wrapper.jar
 
 # End of https://www.gitignore.io/api/android,androidstudio
+/app/debug/

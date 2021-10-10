@@ -410,7 +410,7 @@
                     android:alignmentMode="alignMargins"
                     android:columnCount="4"
                     android:padding="10dp"
-                    android:rowCount="1">
+                    android:rowCount="2">
 
                     <androidx.cardview.widget.CardView
                         android:id="@+id/statewise_card"
@@ -479,7 +479,7 @@
 
 
                     <androidx.cardview.widget.CardView
-                        android:id="@+id/moreinfo_card"
+                        android:id="@+id/guidelines_card"
                         android:layout_width="0dp"
                         android:layout_height="0dp"
                         android:layout_rowWeight="1"
@@ -495,22 +495,50 @@
                             android:clickable="true"
                             android:focusable="true"
                             android:gravity="center"
-                            android:onClick="openMoreInfo"
+                            android:onClick="offline"
                             android:orientation="vertical"
                             android:padding="10dp">
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="World Data"
-                                android:textColor="#69f0ae"
+                                android:text="Offline Protocols"
+                                android:textColor="@color/orange"
                                 android:textSize="14sp" />
                         </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/moreinfo_card"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_marginStart="8dp"
+                        app:cardBackgroundColor="@color/cardBackground"
+                        app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:onClick="openMoreInfo"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="World Data"
+                            android:textColor="#69f0ae"
+                            android:textSize="14sp" />
+                    </LinearLayout>
                     </androidx.cardview.widget.CardView>
 
                 </GridLayout>
             </RelativeLayout>
         </LinearLayout>
-
     </LinearLayout>
 </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

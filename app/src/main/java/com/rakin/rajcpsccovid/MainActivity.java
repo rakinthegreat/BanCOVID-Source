@@ -27,6 +27,7 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 import com.rakin.rajcpsccovid.activities.InfoActivity;
+import com.rakin.rajcpsccovid.activities.VideoActivity;
 import com.rakin.rajcpsccovid.activities.WorldDataActivity;
 
 import org.eazegraph.lib.charts.PieChart;
@@ -393,6 +394,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void openMoreInfo(View view) {
         Intent intent = new Intent(this, WorldDataActivity.class);
+        startActivity(intent);
+    }
+
+    public void offline(View view) {
+        Intent intent = new Intent(this, VideoActivity.class);
         startActivity(intent);
     }
 
