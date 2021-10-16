@@ -12,7 +12,12 @@ import androidx.core.content.ContextCompat;
 
 import com.rakin.rajcpsccovid.R;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.util.Objects;
+import java.util.Scanner;
 
 public class InfoActivity extends AppCompatActivity {
 
@@ -46,5 +51,18 @@ public class InfoActivity extends AppCompatActivity {
         Intent intent = new Intent(Intent.ACTION_VIEW);
         intent.setData(Uri.parse(url));
         startActivity(intent);
+    }
+    public String checkupdateVersionID(){
+        File file = new File("C:\\Users\\pankaj\\Desktop\\test.txt");
+        Scanner sc = null;
+        try {
+            sc = new Scanner(file);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        while (sc.hasNextLine()) {
+            return (sc.nextLine());
+        }
+        return "";
     }
 }
