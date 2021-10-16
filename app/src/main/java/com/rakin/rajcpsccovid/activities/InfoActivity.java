@@ -95,10 +95,15 @@ public class InfoActivity extends AppCompatActivity {
             final String versionName = String.valueOf(str.versionCode);
             CurrentVersion = versionName;
             // Toast.makeText(context, versionName, Toast.LENGTH_SHORT).show();
-            if (!versionName.equals(checkupdateVersionID())){
+            if (checkupdateVersionID().equals("") || checkupdateVersionID() == null){
+                Toast.makeText(this, "Could not check for updates!", Toast.LENGTH_SHORT).show();
+            }
+             else if (!versionName.equals(checkupdateVersionID())){
                 UpdateDialog();
                 // Do What to do
-            } else {
+            }
+            else {
+                Toast.makeText(this, "This App is Up to Date!", Toast.LENGTH_SHORT).show();
                 // Do what to do
             }
         } catch (PackageManager.NameNotFoundException e) {
@@ -129,7 +134,7 @@ public class InfoActivity extends AppCompatActivity {
         AlertDialog alertDialog = alertDialogBuilder.create();
         alertDialog.show();
     }
-    //https://raw.githubusercontent.com/rakinthegreat/BanCovidLinkMD/main/README.md
+
 
     public String updateVersionLink(){
         try {
