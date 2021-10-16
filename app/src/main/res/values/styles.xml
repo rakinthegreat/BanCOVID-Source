@@ -17,4 +17,14 @@
         <item name="fontFamily">@font/metropolis_medium</item>
     </style>
 
+    <style name="AppTheme3" parent="Theme.AppCompat.Dialog.Alert">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">#568fff</item>
+        <item name="fontFamily">@font/metropolis_medium</item>
+        <item name="android:colorBackground">#000</item>
+        <item name="android:textColor">#ff1744</item>
+    </style>
+
 </resources>
