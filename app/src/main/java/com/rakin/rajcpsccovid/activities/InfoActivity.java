@@ -147,7 +147,11 @@ public class InfoActivity extends AppCompatActivity {
             String line;
             while ((line = in.readLine()) != null) {
                 // Toast.makeText(this, "Online" + line, Toast.LENGTH_SHORT).show();
-                return(line);
+                if (!line.startsWith("http://") && !line.startsWith("https://")) {
+                    return "http://" + (line);
+                } else{
+                    return  line;
+                }
             }
 
         }
