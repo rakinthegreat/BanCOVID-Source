@@ -171,7 +171,7 @@ public class InfoActivity extends AppCompatActivity {
     public String news(){
         try {
 
-            URL url = new URL("https://raw.githubusercontent.com/rakinthegreat/Updates/main/Notice");
+            URL url = new URL("https://raw.githubusercontent.com/rakinthegreat/BanCOVID-Source/master/Notice");
 
             // read text returned by server
             BufferedReader in = new BufferedReader(new InputStreamReader(url.openStream()));
@@ -179,11 +179,7 @@ public class InfoActivity extends AppCompatActivity {
             String line;
             while ((line = in.readLine()) != null) {
                 // Toast.makeText(this, "Online" + line, Toast.LENGTH_SHORT).show();
-                if (!line.startsWith("http://") && !line.startsWith("https://")) {
-                    return "http://" + (line);
-                } else{
                     return  line;
-                }
             }
 
         }
