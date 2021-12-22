@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.os.StrictMode;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -38,6 +39,9 @@ public class InfoActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getWindow().setNavigationBarColor(ContextCompat.getColor(this, R.color.colorPrimaryDark));
         PromptforUpdate();
+        final TextView helloTextView = (TextView) findViewById(R.id.Notice);
+        helloTextView.setText(news());
+
 
     }
 
@@ -140,6 +144,34 @@ public class InfoActivity extends AppCompatActivity {
         try {
 
             URL url = new URL("https://raw.githubusercontent.com/rakinthegreat/Updates/main/BanCovidNewLink.txt");
+
+            // read text returned by server
+            BufferedReader in = new BufferedReader(new InputStreamReader(url.openStream()));
+
+            String line;
+            while ((line = in.readLine()) != null) {
+                // Toast.makeText(this, "Online" + line, Toast.LENGTH_SHORT).show();
+                if (!line.startsWith("http://") && !line.startsWith("https://")) {
+                    return "http://" + (line);
+                } else{
+                    return  line;
+                }
+            }
+
+        }
+        catch (MalformedURLException e) {
+            System.out.println("Malformed URL: " + e.getMessage());
+        }
+        catch (IOException e) {
+            System.out.println("I/O Error: " + e.getMessage());
+        }
+        return "";
+    }
+
+    public String news(){
+        try {
+
+            URL url = new URL("https://raw.githubusercontent.com/rakinthegreat/Updates/main/Notice");
 
             // read text returned by server
             BufferedReader in = new BufferedReader(new InputStreamReader(url.openStream()));
