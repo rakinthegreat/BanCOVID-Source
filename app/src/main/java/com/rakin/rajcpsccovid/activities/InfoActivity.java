@@ -10,12 +10,16 @@ import android.os.Bundle;
 import android.os.StrictMode;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.LinearLayout;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 import androidx.core.content.ContextCompat;
 
 import com.rakin.rajcpsccovid.R;
@@ -41,7 +45,7 @@ public class InfoActivity extends AppCompatActivity {
         PromptforUpdate();
         final TextView helloTextView = (TextView) findViewById(R.id.Notice);
         helloTextView.setText(news());
-
+        helloTextView.setSingleLine(false);
 
     }
 
@@ -181,6 +185,7 @@ public class InfoActivity extends AppCompatActivity {
                 // Toast.makeText(this, "Online" + line, Toast.LENGTH_SHORT).show();
                     return  line;
             }
+            return "No Notice or News Available Right Now";
 
         }
         catch (MalformedURLException e) {
@@ -189,6 +194,6 @@ public class InfoActivity extends AppCompatActivity {
         catch (IOException e) {
             System.out.println("I/O Error: " + e.getMessage());
         }
-        return "";
+        return "Could not check for any Notice / News";
     }
 }
